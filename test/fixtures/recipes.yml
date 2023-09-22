@@ -1,0 +1,17 @@
+# Read about fixtures at https://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  user_id: 1
+  name: MyString
+  chef: MyString
+  prep_time: 1
+  cook_time: 1
+  temperature: 1
+
+two:
+  user_id: 1
+  name: MyString
+  chef: MyString
+  prep_time: 1
+  cook_time: 1
+  temperature: 1
