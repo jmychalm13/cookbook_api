@@ -1,7 +1,7 @@
-### Recipes Show
+### Recipes Index
 GET http://localhost:3000/recipes.json
 
-###
+### Recipes create
 POST http://localhost:3000/recipes.json
 Content-Type: application/json
 
@@ -13,3 +13,6 @@ Content-Type: application/json
   "cook_time": 15,
   "temperature": 225
 }
+
+### Recipes Show
+GET http://localhost:3000/recipes/1.json
