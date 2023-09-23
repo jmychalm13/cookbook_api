@@ -3,4 +3,17 @@ class RecipesController < ApplicationController
     @recipes = Recipe.all
     render :index
   end
+
+  def create
+    @recipe = Recipe.create(
+      user_id: params[:user_id],
+      name: params[:name],
+      chef: params[:chef],
+      prep_time: params[:prep_time],
+      cook_time: params[:cook_time],
+      temperature: params[:temperature]
+    )
+
+    render :show
+  end
 end

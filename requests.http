@@ -1,0 +1,15 @@
+### Recipes Show
+GET http://localhost:3000/recipes.json
+
+###
+POST http://localhost:3000/recipes.json
+Content-Type: application/json
+
+{
+  "user_id": 1,
+  "name": "toast2",
+  "chef": "Me",
+  "prep_time": 10,
+  "cook_time": 15,
+  "temperature": 225
+}
