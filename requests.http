@@ -58,6 +58,12 @@ Content-Type: application/json
   "measurement": 2
 }
 
+### Ingredients Index
+GET http://localhost:3000/ingredients.json
+
+### Ingredient Show
+GET http://localhost:3000/ingredients/1.json
+
 ### Ingredient Update
 PATCH http://localhost:3000/ingredients/1.json
 Content-Type: application/json
@@ -65,3 +71,6 @@ Content-Type: application/json
 {
   "name": "crunchy peanut butter"
 }
+
+### Ingredient Destroy
+DELETE http://localhost:3000/ingredients/1.json

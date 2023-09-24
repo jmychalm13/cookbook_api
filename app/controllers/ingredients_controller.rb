@@ -24,4 +24,15 @@ class IngredientsController < ApplicationController
     render :show
   end
 
+  def show
+    @ingredient = Ingredient.find(params[:id])
+    render :show
+  end
+
+  def destroy
+    @ingredient = Ingredient.find(params[:id])
+    @ingredient.destroy
+    render json: { message: "Ingredient has been destroyed!" }
+  end
+
 end
