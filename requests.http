@@ -57,3 +57,11 @@ Content-Type: application/json
   "name": "peanut butter",
   "measurement": 2
 }
+
+### Ingredient Update
+PATCH http://localhost:3000/ingredients/1.json
+Content-Type: application/json
+
+{
+  "name": "crunchy peanut butter"
+}

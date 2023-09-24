@@ -14,4 +14,14 @@ class IngredientsController < ApplicationController
     render :show
   end
 
+  def update
+    @ingredient = Ingredient.find(params[:id])
+    @ingredient.update(
+      recipe_id: params[:recipe_id] || @ingredient.recipe_id,
+      name: params[:name] || @ingredient.name,
+      measurement: params[:measurement] || @ingredient.measurement,
+    )
+    render :show
+  end
+
 end
