@@ -38,7 +38,7 @@ Content-Type: application/json
 GET http://localhost:3000/recipes/1.json
 
 ### Recipes Update
-PATCH http://localhost:3000/recipes/2.json
+PATCH http://localhost:3000/recipes/3.json
 Content-Type: application/json
 
 {
@@ -62,7 +62,7 @@ Content-Type: application/json
 GET http://localhost:3000/ingredients.json
 
 ### Ingredient Show
-GET http://localhost:3000/ingredients/1.json
+GET http://localhost:3000/ingredients/2.json
 
 ### Ingredient Update
 PATCH http://localhost:3000/ingredients/1.json
@@ -86,7 +86,7 @@ Content-Type: application/json
 }
 
 ### Direction show
-GET http://localhost:3000/directions/1.json
+GET http://localhost:3000/directions/2.json
 
 ### Direction update
 PATCH http://localhost:3000/directions/1.json
