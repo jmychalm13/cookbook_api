@@ -22,4 +22,6 @@ Rails.application.routes.draw do
   patch "/ingredients/:id" => "ingredients#update"
 
   delete "/ingredients/:id" => "ingredients#destroy"
+
+  get "/directions" => "directions#index"
 end
