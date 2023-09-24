@@ -24,11 +24,11 @@ GET http://localhost:3000/recipes.json
 ### Recipes create
 POST http://localhost:3000/recipes.json
 Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJ1c2VyX2lkIjoyLCJleHAiOjE2OTU2NDcwNDF9.QPR46JF1P7uGiov6MwHKFWojPlyGsPbYsWCSEM0pS2E
 
 {
-  "user_id": 1,
-  "name": "Chicken Florentine",
-  "chef": "Dan",
+  "name": "Pancakes",
+  "chef": "Tiger",
   "prep_time": 20,
   "cook_time": 90,
   "temperature": 325

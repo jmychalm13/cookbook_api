@@ -5,16 +5,20 @@ class RecipesController < ApplicationController
   end
 
   def create
+    pp current_user
     @recipe = Recipe.create(
-      user_id: params[:user_id],
+      user_id: current_user.id,
       name: params[:name],
       chef: params[:chef],
       prep_time: params[:prep_time],
       cook_time: params[:cook_time],
       temperature: params[:temperature]
     )
-
-    render :show
+    if @recipe.valid?
+      render :show
+    else
+      render json: {errors: @recipe.errors.full_messages}, status: 422
+    end
   end
 
   def show
