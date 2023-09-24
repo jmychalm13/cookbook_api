@@ -9,6 +9,15 @@ Content-Type: application/json
   "password_confirmation": "password"
 }
 
+### Sessions create
+POST http://localhost:3000/sessions.json
+Content-Type: application/json
+
+{
+  "email": "dan@test.com",
+  "password": "password"
+}
+
 ### Recipes Index
 GET http://localhost:3000/recipes.json
 
