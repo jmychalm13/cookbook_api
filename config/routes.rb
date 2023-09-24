@@ -24,4 +24,12 @@ Rails.application.routes.draw do
   delete "/ingredients/:id" => "ingredients#destroy"
 
   get "/directions" => "directions#index"
+
+  post "/directions" => "directions#create"
+
+  get "/directions/:id" => "directions#show"
+
+  patch "/directions/:id" => "directions#update"
+
+  delete "/directions/:id" => "directions#destroy"
 end
