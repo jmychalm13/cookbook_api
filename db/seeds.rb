@@ -12,4 +12,11 @@ Recipe.create!([
   {user_id: 1, name: "Pizza", chef: "Katherine Evans", prep_time: 23423, cook_time: 450, temperature: 400},
 ])
 
+Ingredient.create!([
+  {recipe_id: 3, name: "eggs", measurement: 2},
+  {recipe_id: 5, name: "bricks", measurement: 3},
+  {recipe_id: 7, name: "onion", measurement: 1},
+  {recipe_id: 8, name: "tomato", measurement: 5},
+])
+
 puts "Seeding completed : )"
