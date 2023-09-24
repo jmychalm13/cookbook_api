@@ -1,3 +1,14 @@
+### User Create
+POST http://localhost:3000/users.json
+Content-Type: application/json
+
+{
+  "name": "Dan",
+  "email": "dan@test.com",
+  "password": "password",
+  "password_confirmation": "password"
+}
+
 ### Recipes Index
 GET http://localhost:3000/recipes.json
 
@@ -7,12 +18,23 @@ Content-Type: application/json
 
 {
   "user_id": 1,
-  "name": "toast2",
-  "chef": "Me",
-  "prep_time": 10,
-  "cook_time": 15,
-  "temperature": 225
+  "name": "Chicken Florentine",
+  "chef": "Dan",
+  "prep_time": 20,
+  "cook_time": 90,
+  "temperature": 325
 }
 
 ### Recipes Show
 GET http://localhost:3000/recipes/1.json
+
+### Recipes Update
+PATCH http://localhost:3000/recipes/2.json
+Content-Type: application/json
+
+{
+  "chef": "Mary Jane"
+}
+
+### Recipes destroy
+DELETE http://localhost:3000/recipes/2.json
