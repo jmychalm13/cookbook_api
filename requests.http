@@ -3,8 +3,8 @@ POST http://localhost:3000/users.json
 Content-Type: application/json
 
 {
-  "name": "Dan",
-  "email": "dan@test.com",
+  "name": "Jess",
+  "email": "jess@test.com",
   "password": "password",
   "password_confirmation": "password"
 }
