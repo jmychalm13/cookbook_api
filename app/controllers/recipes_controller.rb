@@ -15,6 +15,14 @@ class RecipesController < ApplicationController
       temperature: params[:temperature]
     )
     if @recipe.valid?
+      pp "Here I am!!!!!!"
+      params[:ingredients_list].split(/\s*,\s*/).each { |ingredient|
+        Ingredient.create(
+          recipe_id: @recipe.id,
+          name: ingredient,
+          measurement: 0,
+        )
+      }
       render :show
     else
       render json: {errors: @recipe.errors.full_messages}, status: 422
